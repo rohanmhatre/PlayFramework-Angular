@@ -38,7 +38,9 @@ public class ContactController extends Controller {
         }
         return notFound();
     }
-
+    /*
+    UPDATE ENTITY
+    */
     public static Result update(Long id) {
         Form<Contact> ContactForm = Form.form(Contact.class).bindFromRequest();
         if(ContactForm.hasErrors()) {
